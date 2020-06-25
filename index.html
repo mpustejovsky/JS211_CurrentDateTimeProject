@@ -9,7 +9,91 @@
     <h1>Hello World!</h1>
     <hr/>
     <div id="display-element"></div>
-    <button onclick="displayDate()">Click Me</button>
+    <button onclick="displayDate()">Click Me for Date and Time</button>
+    <hr/>
+      <form>
+        <div>Input a Number and it will convert it to a String</div>
+      <label for="numinput">Input a number</label>
+      <input type="number" id="numinput" onkeyup="saveNumber(this.value)">      
+      </form>
+    <div id="displays">string =</div>    
+    <button onclick="displayString()" >Click Me</button>
+    <hr/>
+    <form>
+      <div> Input a string and it will parse out the first set of numbers (must start with a number)</div>
+      <label for="numstring">Input a string</label>
+      <input type="text" id="numstring" onkeyup="saveNumber2(this.value)">      
+      </form>
+    <div id="displayn">number =</div>
+    <button onclick="displayString2()" >Click Me</button>
+    <hr/>
+
+    
+    <form>
+      <div>Input a "String, Number, Boolean (true or flase), or Null and the program will tell you the data type</div>
+      <label for="typeof">Input data</label>
+      <input type="text" id="typeof" onkeyup="saveData(this.value)">      
+      </form>
+    <div id="displayType">Type =</div>
+    <div id="displayType2"></div>
+    <button onclick="displayType()" >Click Me</button>
+    <hr/>
+
+    <form>
+      <label for="num1">Input Number 1</label>
+      <input type="number" id="num1" onkeyup="savenum1(this.value)">   
+      <label for="num2">Input Number 2</label>
+      <input type="number" id="num2" onkeyup="savenum2(this.value)">  
+      </form>
+    <div id="displaysum">sum =</div>
+    <button onclick="addnums()" >Click Me to Add Numbers</button>
+    <hr/>
+
+    <form>
+      <label for="num1a">Input Number 1</label>
+      <input type="number" id="num1a" onkeyup="savenum1a(this.value)">   
+      <label for="num2a">Input Number 2</label>
+      <input type="number" id="num2a" onkeyup="savenum2a(this.value)">  
+      </form>
+    <div id="displaysum2">sum =</div>
+    <div>Will only add if both numbers match</div>
+    <button onclick="addnums2()" >Click Me to Add Numbers</button>
+    <hr/>
+
+    <form>
+      <label for="num1b">Input Number 1</label>
+      <input type="number" id="num1b" onkeyup="savenum1b(this.value)">   
+      <label for="num2b">Input Number 2</label>
+      <input type="number" id="num2b" onkeyup="savenum2b(this.value)">  
+      </form>
+    <div id="displaysum3">sum =</div>
+    <div>Will only add if both numbers if they are both greater than 100</div>
+    <button onclick="addnums3()" >Click Me to Add Numbers</button>
+    <hr/>
+
+
+    <form>
+      <label for="num1c">Input Number 1</label>
+      <input type="number" id="num1c" onkeyup="savenum1c(this.value)">   
+      <label for="num2c">Input Number 2</label>
+      <input type="number" id="num2c" onkeyup="savenum2c(this.value)">  
+      </form>
+    <div id="displaysum4">sum =</div>
+    <div>Will only add if one of the numbers is greater than 100</div>
+    <button onclick="addnums4()" >Click Me to Add Numbers</button>
+    <hr/>
+
+
+    
+    <form>
+      <label for="num1d">Input Number 1</label>
+      <input type="number" id="num1d" onkeyup="savenum1d(this.value)">   
+      <label for="num2d">Input Number 2</label>
+      <input type="number" id="num2d" onkeyup="savenum2d(this.value)">  
+      </form>
+    <div id="displaysum5">sum =</div>
+    <div>Will only add if neither of the numbers equals 100</div>
+    <button onclick="addnums5()" >Click Me to Add Numbers</button>
     <hr/>
   </body>
 </html>
